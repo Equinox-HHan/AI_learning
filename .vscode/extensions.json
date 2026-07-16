@@ -1,0 +1,33 @@
+{
+    "recommendations": [
+        // Python 核心
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+
+        // Jupyter
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+
+        // 格式化 & Lint
+        "ms-python.black-formatter",
+        "charliermarsh.ruff",
+
+        // AI 辅助
+        "github.copilot",
+        "github.copilot-chat",
+
+        // Git
+        "eamodio.gitlens",
+
+        // 数据查看
+        "grapecity.gc-excelviewer",
+
+        // Markdown
+        "yzhang.markdown-all-in-one",
+
+        // Docker (可选)
+        "ms-azuretools.vscode-docker"
+    ]
+}

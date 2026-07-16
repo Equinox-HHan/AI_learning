@@ -1,0 +1,86 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // ── 当前打开的 .py 文件 ──
+        {
+            "name": "Python: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        // ── 带参数的当前文件 ──
+        {
+            "name": "Python: 当前文件 (带参数)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "args": [],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        },
+        // ── 当前文件所在模块（-m 方式运行） ──
+        {
+            "name": "Python: 模块方式运行",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "${fileBasenameNoExtension}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        // ── 附着到已运行的进程 ──
+        {
+            "name": "Python: 附着进程",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            }
+        },
+        // ── Jupyter Notebook (在 VS Code 内直接 F5 可用) ──
+        {
+            "name": "Jupyter: 当前 Notebook",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "purpose": ["debug-in-terminal"]
+        },
+        // ── pytest：当前文件 ──
+        {
+            "name": "Debug Tests: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "${file}",
+                "-v",
+                "--tb=short"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}"
+        },
+        // ── pytest：全部测试 ──
+        {
+            "name": "Debug Tests: 全部",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "${workspaceFolder}",
+                "-v",
+                "--tb=short"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
