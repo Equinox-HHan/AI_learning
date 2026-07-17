@@ -5,14 +5,12 @@
     "python.defaultInterpreterPath": "C:\\Users\\LENOVO\\anaconda3\\envs\\torch_env\\python.exe",
     "python.terminal.activateEnvironment": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
-
     // ============================================================
     // Jupyter Notebook
     // ============================================================
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
-
     // ============================================================
     // 语言服务器 & 类型检查
     // ============================================================
@@ -21,13 +19,27 @@
     "python.analysis.diagnosticMode": "workspace",
     "python.analysis.indexing": true,
     "python.analysis.packageIndexDepths": [
-        { "name": "torch", "depth": 3 },
-        { "name": "tensorflow", "depth": 3 },
-        { "name": "transformers", "depth": 2 },
-        { "name": "numpy", "depth": 2 },
-        { "name": "pandas", "depth": 2 }
+        {
+            "name": "torch",
+            "depth": 3
+        },
+        {
+            "name": "tensorflow",
+            "depth": 3
+        },
+        {
+            "name": "transformers",
+            "depth": 2
+        },
+        {
+            "name": "numpy",
+            "depth": 2
+        },
+        {
+            "name": "pandas",
+            "depth": 2
+        }
     ],
-
     // ============================================================
     // 格式化（保存时自动）
     // ============================================================
@@ -40,7 +52,6 @@
             "source.organizeImports": "explicit"
         }
     },
-
     // ============================================================
     // Linting（Ruff 速度快，覆盖 flake8+isort）
     // ============================================================
@@ -50,7 +61,6 @@
         "--line-length=100",
         "--ignore=E501"
     ],
-
     // ============================================================
     // 测试（pytest）
     // ============================================================
@@ -60,14 +70,12 @@
         "-v"
     ],
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
-
     // ============================================================
     // 文件关联
     // ============================================================
     "files.associations": {
         "*.ipynb": "jupyter-notebook"
     },
-
     // ============================================================
     // 排除干扰文件
     // ============================================================
@@ -81,7 +89,6 @@
         "**/__pycache__/**": true,
         "**/.ipynb_checkpoints/**": true
     },
-
     // ============================================================
     // 终端
     // ============================================================
@@ -89,10 +96,14 @@
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
-            "args": ["-NoLogo", "-NoExit", "-Command", "conda activate torch_env"]
+            "args": [
+                "-NoLogo",
+                "-NoExit",
+                "-Command",
+                "conda activate torch_env"
+            ]
         }
     },
-
     // ============================================================
     // 编辑器行为
     // ============================================================
@@ -100,5 +111,23 @@
     "editor.insertSpaces": true,
     "editor.renderWhitespace": "boundary",
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    // ============================================================
+    // 补全建议：全局开启快速建议，关闭内联建议（Copilot 幽灵文本）
+    // ============================================================
+    // 普通编辑器：按字符触发快速建议
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    // 关闭内联建议（Ghost text / Copilot-style）
+    "editor.inlineSuggest.enabled": false,
+    // ============================================================
+    // Notebook 内快速建议（.ipynb 单元格内）
+    // ============================================================
+    "notebook.suggest.enabled": true,
+    "notebook.inlineSuggest.enabled": false,
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
