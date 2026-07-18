@@ -1,0 +1,3 @@
+[submodule "d2l-zh"]
+	path = d2l-zh
+	url = https://github.com/d2l-ai/d2l-zh.git
