@@ -18,6 +18,9 @@
     "python.analysis.autoImportCompletions": true,
     "python.analysis.diagnosticMode": "workspace",
     "python.analysis.indexing": true,
+    "python.analysis.exclude": [
+        "**/d2l-zh/**"
+    ],
     "python.analysis.packageIndexDepths": [
         {
             "name": "torch",
@@ -87,7 +90,11 @@
     },
     "files.watcherExclude": {
         "**/__pycache__/**": true,
-        "**/.ipynb_checkpoints/**": true
+        "**/.ipynb_checkpoints/**": true,
+        "**/d2l-zh/**": true
+    },
+    "search.exclude": {
+        "**/d2l-zh/**": true
     },
     // ============================================================
     // 终端
