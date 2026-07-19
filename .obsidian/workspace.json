@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "d2l-zh/chapter_preliminaries/autograd.md",
+                "file": "d2l-zh/chapter_preliminaries/probability.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "autograd"
+              "title": "probability"
             }
           }
         ]
@@ -186,15 +186,21 @@
   },
   "active": "dfa67b20f56d3220",
   "lastOpenFiles": [
+    "probability.py.tmp.24568.2b7ca85a53a1",
+    "d2l-zh/d2l/__pycache__/torch.cpython-311.pyc",
+    "d2l-zh/d2l/__pycache__/__init__.cpython-311.pyc",
+    "probability.py.tmp.24568.d188cec758d3",
+    "probability.py.tmp.24568.d0e617e9a014",
+    "probability.py",
     "d2l-zh/chapter_preliminaries/linear-algebra.md",
+    "d2l-zh/chapter_preliminaries/lookup-api.md",
+    "d2l-zh/chapter_preliminaries/probability.md",
+    "d2l-zh/chapter_preliminaries/autograd.md",
     "d2l-zh/d2l/__pycache__/__init__.cpython-313.pyc",
     "d2l-zh/d2l/__pycache__",
-    "d2l-zh/chapter_preliminaries/autograd.md",
     "autograd.py",
     "d2l-zh/chapter_preliminaries/calculus.md",
-    "d2l-zh/chapter_preliminaries/probability.md",
     "d2l-zh/chapter_preliminaries/pandas.md",
-    "d2l-zh/chapter_preliminaries/lookup-api.md",
     "d2l-zh/chapter_preliminaries/calculus_origin.md",
     "AI_schedule.md"
   ]
