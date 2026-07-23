@@ -3,14 +3,16 @@
     // Python 解释器：强制使用 torch_env（PyTorch CUDA + 全 ML 栈）
     // ============================================================
     "python.defaultInterpreterPath": "C:\\Users\\LENOVO\\anaconda3\\envs\\torch_env\\python.exe",
-    "python.terminal.activateEnvironment": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": false,
+    "python.terminal.activateEnvInCurrentTerminal": false,
     // ============================================================
     // Jupyter Notebook
     // ============================================================
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.logging.level": "off",
+    "jupyter.runStartupCommands": [],
     // ============================================================
     // 语言服务器 & 类型检查
     // ============================================================
