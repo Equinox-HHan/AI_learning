@@ -137,6 +137,14 @@
     // ============================================================
     "notebook.suggest.enabled": true,
     "notebook.inlineSuggest.enabled": false,
+    // Notebook 快速建议：输入时自动弹出补全列表
+    "notebook.quickSuggestions": true,
+    // 针对 Python / Notebook 禁用 Copilot，避免干扰原生建议
+    "github.copilot.enable": {
+        "*": true,
+        "python": false,
+        "jupyter-notebook": false
+    },
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
