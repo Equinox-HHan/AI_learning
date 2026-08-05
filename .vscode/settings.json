@@ -18,31 +18,32 @@
     // ============================================================
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.indexing": true,
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.indexing": false,
     "python.analysis.exclude": [
-        "**/d2l-zh/**"
+        "**/d2l-zh/**",
+        "**/torch_env/**"
     ],
     "python.analysis.packageIndexDepths": [
         {
             "name": "torch",
-            "depth": 3
+            "depth": 1
         },
         {
             "name": "tensorflow",
-            "depth": 3
+            "depth": 1
         },
         {
             "name": "transformers",
-            "depth": 2
+            "depth": 1
         },
         {
             "name": "numpy",
-            "depth": 2
+            "depth": 1
         },
         {
             "name": "pandas",
-            "depth": 2
+            "depth": 1
         }
     ],
     // ============================================================
@@ -58,10 +59,10 @@
         }
     },
     // ============================================================
-    // Linting（Ruff 速度快，覆盖 flake8+isort）
+    // Linting（已关闭以减少 Pylance 负载，需要时重新启用）
     // ============================================================
-    "python.linting.enabled": true,
-    "python.linting.ruffEnabled": true,
+    "python.linting.enabled": false,
+    "python.linting.ruffEnabled": false,
     "python.linting.ruffArgs": [
         "--line-length=100",
         "--ignore=E501"
@@ -74,7 +75,7 @@
         "--tb=short",
         "-v"
     ],
-    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
     // ============================================================
     // 文件关联
     // ============================================================
