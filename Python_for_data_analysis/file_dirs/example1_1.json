@@ -1,0 +1,1 @@
+{"project": "Demo Configuration", "version": "1.0.0", "status": "active", "settings": {"theme": "dark", "notifications": true, "max_connections": 100}, "users": [{"id": 1, "name": "Alice", "role": "admin", "email": "alice@example.com"}, {"id": 2, "name": "Bob", "role": "developer", "email": "bob@example.com"}]}
